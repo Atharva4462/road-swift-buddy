@@ -153,6 +153,33 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         <main className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8 bg-gray-100">
           {children}
         </main>
+
+        {/* Mobile Footer Navigation */}
+        <footer className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-10">
+          <div className="grid grid-cols-4 h-16">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={cn(
+                  "flex flex-col items-center justify-center px-2 py-1.5",
+                  location.pathname === item.href
+                    ? "text-primary"
+                    : "text-gray-600"
+                )}
+              >
+                <item.icon className={cn(
+                  "h-5 w-5",
+                  location.pathname === item.href ? "text-primary" : "text-gray-400"
+                )} />
+                <span className="text-xs mt-1">{item.name}</span>
+              </Link>
+            ))}
+          </div>
+        </footer>
+        
+        {/* Add padding to the bottom on mobile for the footer space */}
+        <div className="h-16 lg:hidden"></div>
       </div>
     </div>
   );
