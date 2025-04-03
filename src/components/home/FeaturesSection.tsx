@@ -9,37 +9,37 @@ const FeaturesSection = () => {
       icon: Calculator,
       title: "Toll Cost Estimation",
       description: "Calculate accurate toll charges for your journey before you travel.",
-      variant: "primary"
+      variant: "primary" as const
     },
     {
       icon: Wallet,
       title: "FASTag Management",
       description: "Manage your FASTag balance, recharge online, and receive low balance alerts.",
-      variant: "primary"
+      variant: "primary" as const
     },
     {
       icon: Car,
       title: "Multiple Vehicle Support",
       description: "Link multiple vehicles to your account and manage all your FASTags in one place.",
-      variant: "primary"
+      variant: "primary" as const
     },
     {
       icon: Route,
       title: "Travel History & Logs",
       description: "Keep track of your travel history, toll payments, and route information.",
-      variant: "primary"
+      variant: "primary" as const
     },
     {
       icon: Shield,
       title: "Secure Transactions",
       description: "Bank-grade security for all your FASTag transactions and personal data.",
-      variant: "accent"
+      variant: "accent" as const
     },
     {
       icon: CreditCard,
       title: "Easy Recharges",
       description: "Quick and hassle-free FASTag recharges with multiple payment options.",
-      variant: "accent"
+      variant: "accent" as const
     }
   ];
 
