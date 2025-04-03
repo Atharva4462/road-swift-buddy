@@ -1,6 +1,6 @@
 
 import React, { ReactNode } from 'react';
-import { Bell, User, CreditCard, Car, Route, Calculator, LogOut, Menu } from 'lucide-react';
+import { Bell, User, CreditCard, Car, Route, Calculator, LogOut, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
