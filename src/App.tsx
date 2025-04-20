@@ -11,6 +11,10 @@ import Vehicles from "./pages/Vehicles";
 import TripHistory from "./pages/TripHistory";
 import TollCalculator from "./pages/TollCalculator";
 import Login from "./pages/Login";
+import FuelPayment from "./pages/FuelPayment";
+import ParkingPayment from "./pages/ParkingPayment";
+import Profile from "./pages/Profile";
+import AccountSettings from "./pages/AccountSettings";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +31,10 @@ const App = () => (
           <Route path="/trip-history" element={<TripHistory />} />
           <Route path="/toll-calculator" element={<TollCalculator />} />
           <Route path="/login" element={<Login />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/fuel-payment" element={<FuelPayment />} />
+          <Route path="/parking" element={<ParkingPayment />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<AccountSettings />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
